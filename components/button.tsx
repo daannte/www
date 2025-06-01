@@ -1,14 +1,17 @@
-import { ReactNode } from "react"
+import { ReactNode, MouseEventHandler } from "react"
 
 interface ButtonProps {
   children: ReactNode
+  onClick?: MouseEventHandler<HTMLDivElement>
 }
 
-export default function Button({ children }: ButtonProps) {
+export default function Button({ children, onClick }: ButtonProps) {
   return (
-    <div className="flex items-center bg-button transition-colors hover:bg-button/60 w-fit gap-1 py-2 px-3 rounded-2xl">
+    <div
+      onClick={onClick}
+      className="flex items-center bg-button transition-colors dark:hover:bg-button/60 hover:bg-[#ccc] w-fit gap-1 py-2 px-3 rounded-2xl cursor-pointer"
+    >
       {children}
     </div>
   )
 }
-

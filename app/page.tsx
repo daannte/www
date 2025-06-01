@@ -1,5 +1,6 @@
 import Button from "@/components/button";
 import ProjectCard from "@/components/project-card";
+import ThemeToggle from "@/components/theme-toggle";
 import Link from "next/link";
 import projects from "@/data/projects";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
@@ -7,7 +8,10 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 export default function Home() {
   return (
     <div className="py-12 sm:py-16 px-6 leading-relaxed">
-      <div className="mt-6 sm:mt-12 text-3xl tracking-tight font-medium">Hi, I'm Dante</div>
+      <div className="flex justify-between items-center mt-6 sm:mt-12">
+        <div className="text-3xl tracking-tight font-medium">Hi, I'm Dante</div>
+        <ThemeToggle />
+      </div>
       <p className="mt-6 text-accent">
         I'm a university student in Canada, graduating in December 2025. I enjoy exploring and tinkering with new technologies, especially when it comes to self-hosting, home lab setups, and building things from scratch.
       </p>
