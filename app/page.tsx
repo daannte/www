@@ -1,6 +1,7 @@
 import Button from "@/components/button";
 import ProjectCard from "@/components/project-card";
 import Link from "next/link";
+import projects from "@/data/projects";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { LuMap } from "react-icons/lu"
 
@@ -29,13 +30,16 @@ export default function Home() {
       <div className="mt-16 sm:mt-20 flex flex-col">
         <div className="text-xl font-medium tracking-tight">Projects</div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
-          <ProjectCard
-            name="Travlr"
-            description="Itinerary Planner"
-            demo="https://travlr-9c098.web.app/"
-            github="https://github.com/daannte/travlr"
-            icon={<LuMap className="w-8 h-8" />}
-          />
+          {projects.map((project) => (
+            <ProjectCard
+              key={project.name}
+              name={project.name}
+              description={project.description}
+              demo={project.demo}
+              github={project.github}
+              icon={project.icon}
+            />
+          ))}
         </div>
       </div>
     </div>
