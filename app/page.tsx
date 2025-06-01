@@ -3,7 +3,6 @@ import ProjectCard from "@/components/project-card";
 import Link from "next/link";
 import projects from "@/data/projects";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
-import { LuMap } from "react-icons/lu"
 
 export default function Home() {
   return (
