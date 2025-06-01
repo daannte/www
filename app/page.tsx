@@ -1,3 +1,7 @@
+import Button from "@/components/button";
+import Link from "next/link";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+
 export default function Home() {
   return (
     <div className="py-12 sm:py-16 px-6 leading-relaxed">
@@ -8,6 +12,18 @@ export default function Home() {
       <p className="mt-6 text-accent">
         Outside of tech, I'm into football (the real kind), anime, and recently got into photography. I have an appreciation for minimalism in design, code, or how I approach daily life. I also like projects that blend creativity and problem solving, whether it's through a camera lens or a terminal.
       </p>
+      <div className="flex items-center justify-start gap-4 mt-8">
+        <Link href="https://github.com/daannte" target="_blank">
+          <Button>
+            <FiGithub /> Github
+          </Button>
+        </Link>
+        <Link href="https://linkedin.com/in/dantekirsman" target="_blank">
+          <Button>
+            <FiLinkedin /> Linkedin
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }

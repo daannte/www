@@ -4,6 +4,7 @@
   --color-text: #eeeeee;
   --color-background: #0f0f0f;
   --color-accent: #b5b5b5;
+  --color-button: #222222;
 }
 
 @theme inline {
