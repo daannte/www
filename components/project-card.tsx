@@ -13,8 +13,8 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ name, description, demo, github, icon }: ProjectCardProps) {
   return (
-    <div className="bg-card h-64 rounded-xl flex flex-col border border-button p-2">
-      <div className="relative flex h-full w-full items-center justify-center rounded-lg border border-button">
+    <div className="group bg-card h-64 rounded-xl flex flex-col border border-button p-2">
+      <div className="relative flex h-full w-full items-center justify-center rounded-lg border border-button transition-transform duration-200 group-hover:scale-102 group-hover:shadow-lg">
         <div className="absolute top-1/2 left-1/2 flex h-full translate-x-[-50%] translate-y-[-50%] gap-32">
           <span className="h-full border-l border-dashed border-button"></span>
           <span className="h-full border-r border-dashed border-button"></span>
@@ -23,14 +23,12 @@ export default function ProjectCard({ name, description, demo, github, icon }: P
           <span className="w-full border-t border-dashed border-button"></span>
           <span className="w-full border-b border-dashed border-button"></span>
         </div>
-
         {icon && (
           <div className="relative z-10 bg-card p-3 flex items-center justify-center border-button border rounded-xl">
             {icon}
           </div>
         )}
       </div>
-
       <div className="p-3">
         <div className="flex items-center justify-between mb-1">
           <h3 className="text-lg font-medium">{name}</h3>
