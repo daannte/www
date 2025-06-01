@@ -1,24 +1,29 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-text: oklch(0.949 0.000 0);
   --color-background: oklch(0.168 0.000 0);
   --color-accent: oklch(0.773 0.000 0);
   --color-button: oklch(0.252 0.000 0);
-  --color-card: oklch(0.184 0.000 0.0)
+  --color-card: oklch(0.184 0.000 0.0);
+}
+
+@layer base {
+  @variant dark {
+    --color-text: oklch(0.1822 0 0);
+    --color-background: oklch(0.9551 0 0);
+    --color-accent: oklch(0.4091 0 0);
+    --color-button: oklch(0.9006 0 0);
+    --color-card: oklch(0.9461 0 0);
+  }
 }
 
 @theme inline {
   --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
 }
-
-/* @media (prefers-color-scheme: dark) { */
-/*   :root { */
-/*     --background: var(--color-background); */
-/*     --foreground: var(--color-text); */
-/*   } */
-/* } */
 
 body {
   background: var(--color-background);
