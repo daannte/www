@@ -5,6 +5,7 @@
   --color-background: oklch(0.168 0.000 0);
   --color-accent: oklch(0.773 0.000 0);
   --color-button: oklch(0.252 0.000 0);
+  --color-card: oklch(0.184 0.000 0.0)
 }
 
 @theme inline {

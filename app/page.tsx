@@ -1,6 +1,8 @@
 import Button from "@/components/button";
+import ProjectCard from "@/components/project-card";
 import Link from "next/link";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { LuMap } from "react-icons/lu"
 
 export default function Home() {
   return (
@@ -13,16 +15,28 @@ export default function Home() {
         Outside of tech, I'm into football (the real kind), anime, and recently got into photography. I have an appreciation for minimalism in design, code, or how I approach daily life. I also like projects that blend creativity and problem solving, whether it's through a camera lens or a terminal.
       </p>
       <div className="flex items-center justify-start gap-4 mt-8">
-        <Link href="https://github.com/daannte" target="_blank">
+        <Link href="https://github.com/daannte" target="_blank" rel="noopener noreferrer">
           <Button>
             <FiGithub /> Github
           </Button>
         </Link>
-        <Link href="https://linkedin.com/in/dantekirsman" target="_blank">
+        <Link href="https://linkedin.com/in/dantekirsman" target="_blank" rel="noopener noreferrer">
           <Button>
             <FiLinkedin /> Linkedin
           </Button>
         </Link>
+      </div>
+      <div className="mt-16 sm:mt-20 flex flex-col">
+        <div className="text-xl font-medium tracking-tight">Projects</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
+          <ProjectCard
+            name="Travlr"
+            description="Itinerary Planner"
+            demo="https://travlr-9c098.web.app/"
+            github="https://github.com/daannte/travlr"
+            icon={<LuMap className="w-8 h-8" />}
+          />
+        </div>
       </div>
     </div>
   );
