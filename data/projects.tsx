@@ -1,5 +1,6 @@
 import { LuMap } from "react-icons/lu"
-const projects = [
+
+const PROJECTS = [
   {
     name: "Travlr",
     description: "Itinerary Planner",
@@ -9,4 +10,4 @@ const projects = [
   },
 ]
 
-export default projects
+export default PROJECTS
