@@ -2,7 +2,7 @@ import { motion } from "motion/react"
 import ANIMATION_VARIANTS from "@/lib/animations"
 import PROJECTS from "@/data/projects"
 
-import ProjectCard from "../project-card"
+import ProjectCard from "@/components/ui/project-card"
 
 export default function Projects() {
   return (

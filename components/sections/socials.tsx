@@ -3,7 +3,7 @@ import Link from "next/link"
 import ANIMATION_VARIANTS from "@/lib/animations"
 import SOCIAL_LINKS from "@/data/socials"
 
-import Button from "../button"
+import Button from "@/components/ui/button"
 
 export default function Socials() {
   return (

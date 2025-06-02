@@ -1,4 +1,4 @@
-import { LuMap } from "react-icons/lu"
+import { LuMap, LuUser } from "react-icons/lu"
 
 const PROJECTS = [
   {
@@ -8,6 +8,13 @@ const PROJECTS = [
     github: "https://github.com/daannte/travlr",
     icon: <LuMap className="w-8 h-8" />,
   },
+  {
+    name: "Portfolio",
+    description: "This website",
+    demo: "https://shamblesroom.com",
+    github: "https://github.com/daannte/portfolio",
+    icon: <LuUser className="w-8 h-8" />,
+  }
 ]
 
 export default PROJECTS
