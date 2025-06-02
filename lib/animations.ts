@@ -1,6 +1,6 @@
 const ANIMATION_VARIANTS = {
   container: {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 0 },
     visible: {
       opacity: 1,
       y: 0,
@@ -11,7 +11,7 @@ const ANIMATION_VARIANTS = {
     },
   },
   item: {
-    hidden: { opacity: 0, y: 10 },
+    hidden: { opacity: 0, y: 0 },
     visible: { opacity: 1, y: 0 }
   }
 };
