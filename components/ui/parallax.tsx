@@ -5,6 +5,7 @@ import { useRef } from "react";
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
+import ANIMATION_VARIANTS from "@/lib/animations";
 
 type Pic = {
   src: string;
@@ -59,12 +60,13 @@ export const ParallaxScroll = ({
   );
 
   return (
-    <div
+    <motion.div
       className={cn(
-        "h-[40rem] items-start overflow-y-auto w-full no-visible-scrollbar mt-8",
+        "h-[46rem] items-start overflow-y-auto w-full no-visible-scrollbar mt-8",
         className
       )}
       ref={gridRef}
+      variants={ANIMATION_VARIANTS.item}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start max-w-5xl mx-auto gap-10 py-10 px-10">
         <div className="grid gap-10">
@@ -77,6 +79,6 @@ export const ParallaxScroll = ({
           {thirdPart.map((el, idx) => renderImage(el, translateThird, `grid-3-${idx}`))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

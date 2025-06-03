@@ -1,9 +1,10 @@
 import { motion } from "motion/react"
 import Link from "next/link"
-import ANIMATION_VARIANTS from "@/lib/animations"
-import SOCIAL_LINKS from "@/data/socials"
 
 import Button from "@/components/ui/button"
+
+import ANIMATION_VARIANTS from "@/lib/animations"
+import SOCIAL_LINKS from "@/data/socials"
 
 export default function Socials() {
   return (

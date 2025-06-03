@@ -3,10 +3,10 @@
 import { motion } from "motion/react";
 
 import Header from "@/components/sections/header";
+import { ParallaxScroll } from "@/components/ui/parallax";
 
 import ANIMATION_VARIANTS from "@/lib/animations";
 import PICS from "@/data/pics"
-import { ParallaxScroll } from "@/components/ui/parallax";
 
 export default function Pics() {
   return (
