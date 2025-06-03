@@ -10,7 +10,6 @@ import ANIMATION_VARIANTS from "@/lib/animations";
 type Pic = {
   src: string;
   alt: string;
-  caption: string;
   isLandscape?: boolean;
 };
 
@@ -49,12 +48,6 @@ export const ParallaxScroll = ({
           width={el.isLandscape ? 600 : 400}
           alt={el.alt}
         />
-        <div className={cn(
-          "absolute bottom-0 w-full px-3 py-2 text-white text-sm bg-black/60",
-          "opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300"
-        )}>
-          {el.caption}
-        </div>
       </div>
     </motion.div>
   );
