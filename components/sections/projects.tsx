@@ -10,8 +10,7 @@ export default function Projects() {
       className="mt-16 sm:mt-20 flex flex-col"
       variants={ANIMATION_VARIANTS.item}
     >
-      <h2 className="text-xl font-medium tracking-tight">Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {PROJECTS.map((project) => (
           <ProjectCard
             key={project.name}

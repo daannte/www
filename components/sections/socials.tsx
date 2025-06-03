@@ -8,21 +8,24 @@ import Button from "@/components/ui/button"
 export default function Socials() {
   return (
     <motion.div
-      className="flex items-center justify-start gap-4 mt-8"
+      className="flex flex-col justify-center items-start mt-8"
       variants={ANIMATION_VARIANTS.item}
     >
-      {SOCIAL_LINKS.map(({ href, label, icon: Icon }) => (
-        <Link
-          key={label}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button>
-            <Icon /> {label}
-          </Button>
-        </Link>
-      ))}
+      <h1 className="text-2xl font-medium tracking-tight">Links</h1>
+      <div className="flex mt-8 gap-4">
+        {SOCIAL_LINKS.map(({ href, label, icon: Icon }) => (
+          <Link
+            key={label}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button>
+              <Icon /> {label}
+            </Button>
+          </Link>
+        ))}
+      </div>
     </motion.div>
   )
 }

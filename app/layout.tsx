@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning >
       <body
-        className={`${sans.variable} ${mono.variable} antialiased mx-auto max-w-2xl h-screen flex flex-col font-sans`}
+        className={`${sans.variable} ${mono.variable} antialiased h-screen mx-auto max-w-4xl flex flex-col font-sans`}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           {children}

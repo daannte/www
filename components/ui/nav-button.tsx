@@ -21,7 +21,7 @@ export default function NavButton({ href, label }: NavButtonProps) {
       <Link href={href} className="relative w-5 h-5 flex items-center justify-center space-x-1 text-accent">
         <motion.div
           animate={{
-            rotate: hovered ? 80 : 0,
+            rotate: hovered ? 75 : 0,
             scale: hovered ? 0 : 1
           }}
           transition={{
