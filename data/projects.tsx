@@ -12,7 +12,7 @@ const PROJECTS = [
     name: "Portfolio",
     description: "This website",
     demo: "https://shamblesroom.com",
-    github: "https://github.com/daannte/portfolio",
+    github: "https://github.com/daannte/www",
     icon: <LuUser className="w-8 h-8" />,
   }
 ]
