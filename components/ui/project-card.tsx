@@ -45,7 +45,7 @@ export default function ProjectCard({ name, description, demo, github, icon }: P
             </Link>
           </div>
         </div>
-        <p className="text-muted-foreground text-sm">{description}</p>
+        <p className="text-accent text-sm">{description}</p>
       </div>
     </div>
   )
