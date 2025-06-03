@@ -1,6 +1,6 @@
 "use client";
 
-import { useScroll, useTransform, motion } from "motion/react";
+import { useScroll, useTransform, motion, MotionValue } from "motion/react";
 import { useRef } from "react";
 import Image from "next/image";
 
@@ -20,7 +20,7 @@ export const ParallaxScroll = ({
   images: Pic[];
   className?: string;
 }) => {
-  const gridRef = useRef<any>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     container: gridRef,
     offset: ["start start", "end start"],
@@ -35,7 +35,7 @@ export const ParallaxScroll = ({
   const secondPart = images.slice(third, 2 * third);
   const thirdPart = images.slice(2 * third);
 
-  const renderImage = (el: Pic, y: any, key: string) => (
+  const renderImage = (el: Pic, y: MotionValue<number>, key: string) => (
     <motion.div style={{ y }} key={key}>
       <div className="relative overflow-hidden rounded-lg group transition-transform duration-300 hover:scale-[1.02]">
         <Image
