@@ -1,4 +1,4 @@
-import { LuMap, LuUser } from "react-icons/lu"
+import { LuMap, LuUser, LuTv } from "react-icons/lu"
 
 const PROJECTS = [
   {
@@ -6,15 +6,22 @@ const PROJECTS = [
     description: "Itinerary Planner",
     demo: "https://travlr-9c098.web.app/",
     github: "https://github.com/daannte/travlr",
-    icon: <LuMap className="w-8 h-8" />,
+    icon: <LuMap size={32} />,
   },
   {
     name: "Portfolio",
     description: "This website",
     demo: "https://shamblesroom.com",
     github: "https://github.com/daannte/www",
-    icon: <LuUser className="w-8 h-8" />,
-  }
+    icon: <LuUser size={32} />,
+  },
+  {
+    name: "Pico",
+    description: "Minimal Jellyfin Web Client",
+    demo: "https://pico.shamblesroom.com",
+    github: "https://github.com/daannte/pico",
+    icon: <LuTv size={32} />
+  },
 ]
 
 export default PROJECTS
