@@ -6,7 +6,7 @@ import Button from "./button";
 interface ProjectCardProps {
   name: string
   description: string
-  demo: string
+  demo?: string
   github: string
   icon?: ReactNode
 }
@@ -33,11 +33,13 @@ export default function ProjectCard({ name, description, demo, github, icon }: P
         <div className="flex items-center justify-between mb-1">
           <h3 className="text-lg font-medium">{name}</h3>
           <div className="flex items-center gap-2">
-            <Link href={demo} target="_blank" rel="noopener noreferrer">
-              <Button>
-                <FiExternalLink />
-              </Button>
-            </Link>
+            {demo && (
+              <Link href={demo} target="_blank" rel="noopener noreferrer">
+                <Button>
+                  <FiExternalLink />
+                </Button>
+              </Link>
+            )}
             <Link href={github} target="_blank" rel="noopener noreferrer">
               <Button>
                 <FiGithub />
