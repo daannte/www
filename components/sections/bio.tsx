@@ -5,7 +5,7 @@ export default function Bio() {
   return (
     <>
       <motion.p className="mt-6 text-accent" variants={ANIMATION_VARIANTS.item}>
-        I'm a university student in Canada, graduating in December 2025. I enjoy
+        I'm a recent university graduate from Canada. I enjoy
         exploring and tinkering with new technologies, especially when it comes to
         self-hosting, home lab setups, and building things from scratch.
       </motion.p>
