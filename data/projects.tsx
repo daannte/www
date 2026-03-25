@@ -1,4 +1,4 @@
-import { LuMap, LuUser, LuTv, LuGamepad2, LuLock } from "react-icons/lu"
+import { LuMap, LuUser, LuTv, LuGamepad2, LuBook } from "react-icons/lu"
 
 const PROJECTS = [
   {
@@ -8,10 +8,10 @@ const PROJECTS = [
     icon: <LuGamepad2 size={32} />
   },
   {
-    name: "Proton Pass Raycast",
-    description: "Proton Pass Extension for Raycast",
-    github: "https://github.com/daannte/proton-pass-raycast",
-    icon: <LuLock size={32} />
+    name: "Shiori",
+    description: "Open Source Digital Book Server",
+    github: "https://github.com/daannte/shiori",
+    icon: <LuBook size={32} />
   },
   {
     name: "Portfolio",
