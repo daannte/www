@@ -7,7 +7,7 @@ const SOCIAL_LINKS = [
     icon: FiGithub
   },
   {
-    href: "https://linkedin.com/in/dantekirsman",
+    href: "https://linkedin.com/in/daannte",
     label: "Linkedin",
     icon: FiLinkedin
   }
